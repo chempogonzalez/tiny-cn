@@ -1,0 +1,52 @@
+{
+  "name": "tiny-cn",
+  "version": "1.0.0",
+  "description": "✨ Super tiny (156B) library for classNames string construction conditionally",
+  "author": {
+    "name": "Chempo González",
+    "email": "manugonzalezfranco@gmail.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "types": "tiny-cn.d.ts",
+  "source": "src/index.js",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "prepack": "npm run build",
+    "prepublish": "npm run build",
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-fix": "npm run lint -- --fix"
+  },
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chempogonzalez/tiny-cn.git"
+  },
+  "keywords": [
+    "classes",
+    "classname",
+    "classnames",
+    "class",
+    "tiny",
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/chempogonzalez/tiny-cn/issues"
+  },
+  "homepage": "https://github.com/chempogonzalez/tiny-cn#readme",
+  "devDependencies": {
+    "@chempo/ec-linter": "1.0.5",
+    "microbundle": "0.14.2"
+  }
+}
