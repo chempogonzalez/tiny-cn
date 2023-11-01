@@ -36,5 +36,5 @@ const classNamesReducer = (accumulatedValues, currentValue) => {
  *  cn('class1', ['class2', { class3: isValid === true }]) => 'class1 class2'
  */
 export function cn (...params) {
-  return params.reduce(classNamesReducer, []).join(' ')
+  return params.reduce(classNamesReducer, []).join(' ').replace(/\s+/g, ' ').replace(/\s/g, ' ').trim()
 }
