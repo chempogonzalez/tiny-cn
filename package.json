@@ -1,6 +1,6 @@
 {
   "name": "tiny-cn",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "✨ Super tiny (156B) library for classNames string construction conditionally",
   "author": {
     "name": "Chempo González",
@@ -47,6 +47,6 @@
   "homepage": "https://github.com/chempogonzalez/tiny-cn#readme",
   "devDependencies": {
     "@chempo/ec-linter": "1.0.5",
-    "microbundle": "0.14.2"
+    "microbundle": "0.15.1"
   }
 }
