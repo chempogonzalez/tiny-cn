@@ -11,8 +11,10 @@
   "types": "tiny-cn.d.ts",
   "source": "src/index.js",
   "exports": {
+    "types": "./tiny-cn.d.ts",
+    "import": "./dist/index.esm.js",
     "require": "./dist/index.cjs",
-    "default": "./dist/index.modern.js"
+    "default": "./dist/index.esm.js"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.esm.js",
